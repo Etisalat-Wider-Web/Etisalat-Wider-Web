@@ -1,3 +1,5 @@
+![Etisalat Wider Web](https://github.com/Etisalat-Wider-Web/Etisalat-Wider-Web/blob/master/readme.jpg?raw=true)
+
 # Etisalat Wider Web
 ###### The first of its kind* autistic-friendly web extension
 
