@@ -7,17 +7,12 @@ The web can easily become overwhelming to people with Autism. That’s why we cr
 
 Etisalat Wider Web adopts a wide range of technologies in order to streamline the experience of autistic people on the web:
 
-Cleared up interface
-
-Option to choose a sans serif font
-
-Three color schemes: dark, medium and light grey
-
-Advertising removal
-
-Blocking of video’s auto play
-
-Audio volume reduction
+* Cleared up interface
+* Option to choose a sans serif font
+* Three color schemes: dark, medium and light grey
+* Advertising removal
+* Blocking of video’s auto play
+* Audio volume reduction
 
 The extension is available on almost every website and in every language. It’s currently optimized for the most visited UAE websites.
 
