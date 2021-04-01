@@ -1,0 +1,72 @@
+&[domain="moe"] {
+    a {
+        span {
+
+            &:before {
+              z-index: 9;
+              position: relative;
+            }
+
+            &.fa-facebook
+            {
+                display: block !important;
+                visibility: initial !important;
+	            pointer-events: initial !important; 
+                &:before {
+                    content: "\f09a";
+                }
+            }
+
+            &.fa-twitter {
+                display: block !important;
+                visibility: initial !important;
+	            pointer-events: initial !important;
+                &:before {
+                    content: "\f099";
+                }
+            }
+            
+
+            &.fa-youtube:before {
+                content: "\f167";
+            }
+            &.fa-instagram:before {
+                content: "\f16d";
+            }
+
+            &.fa-envelope:before {
+                content: "\f0e0";
+            }
+
+        }
+
+    }
+
+    .fa, .br-theme-fontawesome-stars-o .br-widget a {
+        font: normal 14px/1 "FontAwesome" !important;
+    }
+
+    // boxchat
+    .bcFloat {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+    //menu 
+    li.dynamic, .innerContent .content .left-nav ul li a.selected {
+        background: $color_bg_main !important;
+    }
+    
+    .ms-core-listMenu-verticalBox li.static > .ms-core-listMenu-item {
+        background: $color_bg_submain !important;
+        
+    }
+
+    #serviceCard .nav-tabs > li.active .svg-shape {
+        animation: none;
+    }
+
+    footer h3:before {
+        background: none !important;
+    }
+}

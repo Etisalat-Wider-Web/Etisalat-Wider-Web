@@ -1,0 +1,18 @@
+&[domain="economist"] {
+    .limio-bc1ce499-19b4-4092-b276-e85d8c813d20 DIV.Features.square-theme ,
+    .limio-bc1ce499-19b4-4092-b276-e85d8c813d20 .Features.square-theme .FeaturesWrapper H2.FeaturesHeader,
+    .limio-bc1ce499-19b4-4092-b276-e85d8c813d20 .Features.square-theme DIV.FeaturesWrapper,
+
+    .limio-4794634b-e10c-4c2e-8180-77b5d52828c8 DIV.Features.square-theme,
+    .limio-4794634b-e10c-4c2e-8180-77b5d52828c8 .Features.square-theme .FeaturesWrapper H2.FeaturesHeader,
+    .limio-4794634b-e10c-4c2e-8180-77b5d52828c8 .Features.square-theme DIV.FeaturesWrapper
+    {
+        background: $color_bg_main !important;
+
+        * {
+            background: $color_bg_main !important;
+        }
+    }
+
+   
+}

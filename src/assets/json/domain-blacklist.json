@@ -1,0 +1,51 @@
+[
+    {
+        "domain" : ["linkedin.com"],
+        "block" : "ipad"
+    },    
+    {
+        "domain" : ["amazon.ae","www.amazon.ae"],        
+        "block" : "all"
+    },
+    {
+        "domain" : ["trello.com"],        
+        "block" : "all"
+    },
+    {
+        "domain" : ["map.google.com"],
+        "block" : "all"
+    },
+    {
+        "domain" : ["google.com","www.google.com"],
+        "block" : "all",
+        "path"  : ["/maps"]
+    },
+    {
+        "domain" : ["www.wikipedia.org"],
+        "block" : "all"
+    },
+    {
+        "domain" : ["mail.google.com"],
+        "block" : "all"
+    },
+    {
+        "domain" : ["www.emirates.com"],
+        "block" : "ipad"
+    },    
+    {
+        "domain" : ["www.bankfab.com"],
+        "block" : "all"
+    },    
+    {
+        "domain" : ["www.tiktok.com"],
+        "block" : "ipad"
+    },    
+    {
+        "domain" : ["m.twitch.tv","twitch.tv"],
+        "block" : "ipad"
+    },
+    {
+        "domain" : ["discord.com"],
+        "block" : "ipad"
+    }
+]

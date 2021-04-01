@@ -1,0 +1,33 @@
+/* FILTER */
+img,
+// iframe,
+.hero-image-section,
+[simplywebfilter='gray'],
+[style*='background-image'],
+.item-thumbnail-href {
+    @include filter_grayscale;
+
+    &[class*='logo'] {
+        filter: grayscale(0%) !important;
+    }
+}
+
+a:hover {
+    img {
+        filter: grayscale(0%) !important;
+    }
+}
+
+img[class*='logo'],
+img[id*='logo'] {
+    @include filter_none;
+}
+
+/* gulfnews.com */
+.item-thumbnail-href {
+    display: block;
+}
+
+.item-thumbnail-href span {
+    @include filter_none;
+}

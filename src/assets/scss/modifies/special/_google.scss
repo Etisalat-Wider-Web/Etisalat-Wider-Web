@@ -1,0 +1,42 @@
+&[domain="google"] {
+
+    // google search
+
+    .AUiS2, .RNNXgb, .sbibod, .nChh6e {
+        border-radius: 0 !important;
+    }
+
+    .RNNXgb, .sbibod {
+        background: transparent !important;        
+        border-color: $color_text_main !important;
+
+        &:hover {
+            border-color: $color-dim-white !important;
+        }
+
+        * {
+            background: transparent !important;    
+        }
+    }   
+
+    
+    [alt='Google']{
+        filter: grayscale(0%) !important;;
+    }
+
+    // image + videos 
+    .bRMDJf + .c7cjWc, .BcUvif + .Qjibbc, img + .fWhgmd{
+        background: transparent !important;
+    }
+
+
+
+    // google translate
+    .RvYhPd::before, .X4DQ0::after {
+        display: none;
+    }
+
+    .orkam video {
+        display: none !important;
+    }
+}

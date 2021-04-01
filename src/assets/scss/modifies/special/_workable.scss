@@ -1,0 +1,56 @@
+&[domain="workable"] {
+  [class^="adv"] {
+    display: block !important;
+    visibility: initial !important;
+    pointer-events: all !important;
+  }
+
+  h1.advanced-shared-components-title-styles__title--RbB_r,
+  h2.advanced-shared-components-title-styles__subtitle--RYBPd,
+  p.advanced-components-description-oneColumn-styles__onecolumn--2xwtW,
+  div.advanced-components-testimonials-vertical-styles__testimonial--Hl1N9,
+  input._-_-shared-ui-atoms-input-base-___styles__input,
+  
+  div.advanced-components-jobs-styles__emailmyresume--nm9ha,
+  p.advanced-components-jobs-styles__emailmyresumetext--2dWtw, 
+  div.advanced-components-social-styles__container--2JoO- {
+    border: none !important;
+  }
+
+
+
+  div.advanced-components-gallery-styles__images--1M7ej {
+    display: flex !important;
+  }
+
+  .advanced-components-header-styles__logo--ZYwjY {
+    margin: 0 auto 40px !important;
+  }
+
+  button.careers-jobs-list-loadmore-styles__loadmore--3-bqh{
+      display: block !important;
+  }
+
+  .advanced-components-jobs-styles__emailmyresume--nm9ha {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.advanced-components-social-styles__links--3RYaJ{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+  
+
+  .advanced-components-header-styles__header--3jBS-.advanced-components-header-styles__responsiveBackground--1P-rU {
+
+   @include filter_grayscale ();
+    
+  }
+
+  ._-_-shared-ui-atoms-input-toggle-naked-___styles__toggle{
+      background-color: $color_bg_submain !important;
+  }
+}

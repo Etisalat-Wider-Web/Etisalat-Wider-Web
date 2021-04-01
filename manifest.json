@@ -1,0 +1,129 @@
+{
+  "name": "Etisalat Wider Web",
+  "version": "0.0.5",
+  "manifest_version": 2,
+  "description": "The first Autistic friendly web extension",
+  "homepage_url": "https://www.etisalat.ae",
+  "icons": {
+    "16": "assets/images/icons/icon16.png",
+    "48": "assets/images/icons/icon48.png",
+    "128": "assets/images/icons/icon128.png"
+  },
+  "default_locale": "en",
+  "permissions": [
+    "tabs",    
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*/*"
+  ],
+  
+  "browser_action": {
+    "default_icon": "assets/images/icons/icon19.png",
+    "default_title": "Etisalat Wider Web",
+    "default_popup": "popup/index.html"
+  },
+  "background": {
+    "scripts": ["./assets/js/background.bundle.js"],
+    "persistent": true
+  },
+  "web_accessible_resources": [
+    "options.html",
+    "assets/js/app.js",
+    "assets/css/styling.css",
+    "popup/assets/logo.svg",
+    "assets/images/icons/icon48.png",
+    "assets/images/examples/icon.png",
+    "assets/images/examples/tmp2.png",
+    "assets/images/examples/arrow.png",
+    "assets/images/examples/arrow-circle.png",
+    "assets/images/examples/play-icon.png",
+    "assets/images/examples/play-icon-white.png",
+    "assets/images/examples/etisalat-logo.png",
+    "assets/images/examples/carousel-img.jpg",
+    "assets/images/examples/pay.svg",
+    "assets/images/examples/reload.svg",
+    "assets/images/examples/product-tem1.jpg",
+    "assets/images/examples/product-tem2.jpg",
+    "assets/images/examples/tmp3.png",
+    "assets/images/examples/search.png",
+    "assets/images/examples/location.png",
+    "assets/images/examples/appstore_white.svg",
+    "assets/images/examples/appstore_black.svg",
+    "assets/images/examples/googleplay_white.svg",
+    "assets/images/examples/googleplay_black.svg",
+    "assets/images/examples/android.png",
+    "assets/images/examples/apple.png",
+    "assets/images/examples/huawei.png",
+    "assets/images/examples/facebook.png",
+    "assets/images/examples/instagram.png",
+    "assets/images/examples/linkedln.png",
+    "assets/images/examples/twitter.png",
+    "assets/images/examples/youtube.png",
+    "assets/images/examples/location_map.png",
+    "assets/images/examples/filter.svg",
+    "assets/fonts/Nunito-Black.woff2",
+    "assets/fonts/Nunito-BlackItalic.woff2",
+    "assets/fonts/Nunito-Bold.woff2",
+    "assets/fonts/Nunito-BoldItalic.woff2",
+    "assets/fonts/Nunito-ExtraBold.woff2",
+    "assets/fonts/Nunito-ExtraBoldItalic.woff2",
+    "assets/fonts/Nunito-ExtraLight.woff2",
+    "assets/fonts/Nunito-ExtraLightItalic.woff2",
+    "assets/fonts/Nunito-Italic.woff2",
+    "assets/fonts/Nunito-Light.woff2",
+    "assets/fonts/Nunito-LightItalic.woff2",
+    "assets/fonts/Nunito-Regular.woff2",
+    "assets/fonts/Nunito-SemiBold.woff2",
+    "assets/fonts/Nunito-SemiBoldItalic.woff2",
+    "assets/fonts/OpenSans-Bold.woff2",
+    "assets/fonts/OpenSans-BoldItalic.woff2",
+    "assets/fonts/OpenSans-ExtraBold.woff2",
+    "assets/fonts/OpenSans-ExtraBoldItalic.woff2",
+    "assets/fonts/OpenSans-Italic.woff2",
+    "assets/fonts/OpenSans-Light.woff2",
+    "assets/fonts/OpenSans-LightItalic.woff2",
+    "assets/fonts/OpenSans-Regular.woff2",
+    "assets/fonts/OpenSans-SemiBold.woff2",
+    "assets/fonts/OpenSans-SemiBoldItalic.woff2",
+    "assets/fonts/Roboto-Black.woff2",
+    "assets/fonts/Roboto-BlackItalic.woff2",
+    "assets/fonts/Roboto-Bold.woff2",
+    "assets/fonts/Roboto-BoldItalic.woff2",
+    "assets/fonts/Roboto-Italic.woff2",
+    "assets/fonts/Roboto-Light.woff2",
+    "assets/fonts/Roboto-LightItalic.woff2",
+    "assets/fonts/Roboto-Medium.woff2",
+    "assets/fonts/Roboto-MediumItalic.woff2",
+    "assets/fonts/Roboto-Regular.woff2",
+    "assets/fonts/Roboto-Thin.woff2",
+    "assets/fonts/Roboto-ThinItalic.woff2",
+    "assets/json/domain-user-agent.json",
+    "assets/json/domain-blacklist.json"    
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "assets/js/inject.bundle.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": ["assets/js/inject_ds.bundle.js"],
+      "css": [
+        "assets/css/inject.css"
+      ],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+    
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

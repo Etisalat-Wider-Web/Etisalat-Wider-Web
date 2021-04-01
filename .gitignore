@@ -1,0 +1,9 @@
+/package-lock.json
+/node_modules/*
+/assets
+dist
+builds
+etisalat/*
+etisalat*.zip
+etisalat.zip
+Etisalat*Wider*Web

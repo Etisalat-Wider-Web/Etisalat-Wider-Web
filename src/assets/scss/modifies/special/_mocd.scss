@@ -1,0 +1,79 @@
+
+
+&[domain="mocd"] {
+    @import 'mocd-site';
+
+    /* FILTER */
+    .owl-item {
+        li {
+            &::before {
+                display: none !important;
+            }
+
+            background: $color_bg_main;
+
+            .links a { 
+                background: $color_bg_main;
+            }
+        }
+    }
+
+    .details h1{
+                display: none;
+    }
+
+    a {
+        &:hover {
+            &:before {
+                filter: contrast(100%) !important;
+                color: #b28b46 !important;
+            }
+        }
+        
+        &::before {
+            filter: contrast(0%) !important;
+        }
+    }
+
+    #videoDialog-overlay {
+        z-index: 9999999999;
+    }
+
+    // Hide element
+    .col1 .announcements {
+        display: none;
+    }
+
+
+    // silder drap 
+    .selected-bar , .pointer {
+        background: #b28b46 !important;
+    }
+
+    .back-bar {
+        background: $color_bg_box !important;
+    }
+    ins {
+        display: block !important;
+        visibility: initial !important;
+    }
+
+    .corporate-video {
+        @include filter_grayscale(); 
+    }
+
+    
+
+    &[etisalatdevice = 'tablet'] {
+
+        .announcements .toblock li {
+            padding: 5px;
+
+            span {
+                margin-right: 5px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}

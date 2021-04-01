@@ -1,0 +1,26 @@
+[
+    {
+        "m" : "m.khaleejtimes.com",
+        "d" : ["www.khaleejtimes.com","khaleejtimes.com"]
+    },
+    {
+        "m" : "m.imdb.com",
+        "d" : ["www.imdb.com","imdb.com"]
+    },
+    {
+        "m" : "mobile.twitter.com",
+        "d" : ["twitter.com"]
+    },
+    {
+        "m" : "m.youtube.com",
+        "d" : ["www.youtube.com","youtube.com"]
+    },
+    {
+        "m" : "m.twitch.tv",
+        "d" : ["www.twitch.tv","twitch.tv"]
+    },
+    {
+        "m" : "m.facebook.com",
+        "d" : ["www.facebook.com","facebook.com"]
+    }
+]

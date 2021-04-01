@@ -1,0 +1,30 @@
+// COLORS
+* {
+    color: $color_text_main !important;
+    border-color: $color_bg_box !important;
+}
+
+
+// BACKGROUND
+&, .simplyweb-bgmain, .simplyweb-bgfortext, [simplywebbg = 'main'] {
+    background: $color_bg_main !important;
+
+    
+}
+
+div::before {
+        background: $color_bg_main !important;
+}
+
+.simplyweb-bgfortext {
+    display: inline-block;
+}
+
+h1, h2, h3, h5, h4, h6, p {
+    @include background_text ($color_bg_main);
+}    
+
+
+.spacer.white {
+    background: $color_bg_main !important;
+}

@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'modifies/fonts';
+
+@import 'modifies/special/mocd-site2';
+
+body.etisalat {
+    @import 'modifies/adblock-blacklist';
+
+    &[etisalattheme="dark"] {
+        @import 'themes/dark';
+        @import 'modifies/all';
+    }
+
+    &[etisalattheme="medium"] {
+        @import 'themes/medium';
+        @import 'modifies/all';
+    }
+
+    &[etisalattheme="light"] {
+        @import 'themes/light';
+        @import 'modifies/all';
+    }
+}

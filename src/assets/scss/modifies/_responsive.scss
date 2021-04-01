@@ -1,0 +1,173 @@
+#etisalat-Responsive-Overplay, #etisalat-Responsive-TabletOverplay, #etisalat-Responsive-MobileOverplay {
+    // position: fixed; 
+    width: 100%; 
+    height: 100%; 
+    left: 0px; 
+    top: 0px; 
+    position: relative;
+    background-color: $color_bg_main !important;;
+    z-index: 1 !important;
+    
+    display: none ;
+    align-items: center;
+    justify-content: center;
+
+    #etisalat-Responsive-Iframe, iframe {
+        position: absolute;
+        top:0;
+        width: 100%;
+        height: 100vh;
+        border: 0;
+        padding: 0;
+        margin: 0;
+
+    }
+}
+
+
+&[etisalatdevice = 'desktop'] {
+    #etisalat-Responsive-Overplay, #etisalat-Responsive-TabletOverplay, #etisalat-Responsive-MobileOverplay {
+        display: none !important;
+    }
+
+    &[etisalatparent="true"]  {
+        & + #etisalatslidernote {
+            display: none !important;
+        }
+    }
+}
+
+&[etisalatdevice = 'tablet'], &[etisalatdevice = 'mobile'] {
+    
+    &[etisalatparent="false"], &[etisalatparent="true"]  {
+        
+        overflow-x: hidden;
+        position: relative !important;
+        height: auto !important;
+        padding-bottom: 50px;
+
+        iframe {
+            width: 100%;
+        }
+    }
+
+    &[domain="etisalat"] {
+        margin-top: 0;
+        .hero-content-wrapper .container {
+            width: auto;
+        }
+
+        .product-grid-text-section.plans .tile-table.product-home-card, .product-grid-text-section.plans .tile-table.plan-card {
+            border: none !important;
+        }
+
+       
+    }
+
+    &[domain="wikipedia"] {
+        #mw-mf-viewport {
+            height: auto;
+        }
+    }
+
+    
+
+    .widerweb-nav-icon {
+        display: none !important;
+    }
+    
+    &[etisalatparent="true"] > *:not(.etisalatshow):not(#etisalatslidernote):not(#etisalat-Responsive-TabletOverplay):not(#etisalat-Responsive-MobileOverplay):not(#reportfunction):not(#etisalat-Responsive-Overplay):not(#etisalat-Responsive-Iframe):not(.widerweb-nav-icon):not(.widerweb-hamburger):not(#simplywebnav):not(.widerweb-nav-inner):not(.widerweb-nav-list):not(.widerweb-nav-title):not(.widerweb-nav-list-item):not(.widerweb-nav-list-item-link) {
+        display: none !important;        
+        position: relative!important;        
+    }
+
+    &[etisalatparent="true"]  {
+
+        & + #etisalatslidernote {
+            //display: none !important;
+        }
+
+        &::before {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            content: '';
+            background: $color_bg_main !important;
+        }
+
+        .widerweb-nav-icon {
+            display: block !important;
+        }
+    }
+
+    &[etisalatparent="false"]  {
+        & + #etisalatslidernote {
+            display: none !important;
+        }
+
+    }
+
+    #etisalat-Responsive-Overplay {
+        display: flex !important;
+    }
+
+    #etisalat-Responsive-Iframe{
+        display: block!important;    
+    }
+    
+  
+    
+}
+
+&[etisalatdevice = 'tablet'] {
+    #etisalat-Responsive-TabletOverplay {
+        display: flex !important;
+    }
+
+    #etisalat-Responsive-Iframe, #etisalat-Responsive-TabletIframe {
+        max-width: 768px;
+    }
+
+    .promo-grid {
+        min-height: 200px !important;
+
+        .cover {
+            background: $color_bg_box !important;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .grid-content {
+            padding: 1rem;
+            position: relative;
+            left: auto;
+            bottom: auto;
+        }
+
+        .btn-text {
+            margin: 0 0 15px;
+        }
+
+    }
+}
+
+&[etisalatdevice = 'mobile'] {
+    
+
+    #etisalat-Responsive-Iframe, #etisalat-Responsive-MobileIframe {
+        max-width: 375px;
+        min-height: 937px;
+     
+    }
+
+    #etisalat-Responsive-MobileOverplay {
+        display: flex !important;
+    }
+
+    .promo-grid {
+        height: 180px !important;
+    }
+}

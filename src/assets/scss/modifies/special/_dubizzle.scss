@@ -1,0 +1,14 @@
+&[domain="dubizzle"] {
+
+    .PropertyHomeContainer__Hero-sc-1vyibzu-1 {
+        @include filter_grayscale;
+
+        &:hover {
+            filter: grayscale(0%) !important;
+        }
+    }
+
+    .HomePageBanner-text {
+      z-index: 1;
+    }
+}

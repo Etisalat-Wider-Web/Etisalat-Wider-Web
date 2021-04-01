@@ -1,0 +1,44 @@
+[simplywebbg="main"].btn, &[domain="etisalat"] .read-more, &[domain="etisalat"] .promo-grid .btn-text, &[domain="etisalat"] .cross-promo-bg-tile .btn-text, &[domain="etisalat"] .btn-text.learn-more ,
+.simplywebbutton, &[domain="emirates"] .cta.cta--small.cta--primary.hero__cta, .reportfunction-inner button
+
+{
+    z-index: 1;
+    background: $color_btn_inactive !important;
+    color: $color_btn_txt_inactive !important;
+    border-radius: 10px !important;
+    border: 1px solid transparent !important;
+    transition: none !important;
+
+    span {
+        color: $color_btn_txt_inactive !important;
+    }
+
+
+    &:hover {
+        span {
+            background: $color_btn_active !important;
+            color: $color_btn_txt_active !important;
+            text-decoration: none;
+        }
+        background: $color_btn_active !important;
+        color: $color_btn_txt_active !important;
+        text-decoration: none;
+    }
+
+    h1, h2, h3, h5, h4, h6, span, p {
+        &:before {
+            display: none !important;
+        }
+    }   
+}
+
+// BTN ARROW DOWN U.AE
+.icon--arrow-down {
+    animation: none;
+    &::before {
+        background-color: transparent !important;
+        content: "" !important;
+    }
+    
+}
+

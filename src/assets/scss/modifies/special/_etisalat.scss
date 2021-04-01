@@ -1,0 +1,608 @@
+&[domain="etisalat"] {
+
+    // FONTS
+    .detail-price-new, .paragraph-styling {
+        @include background_text ($color_bg_main);
+    }
+
+    h1, h2, h3, h5, h4, h6 {
+        line-height: 1.5 !important;
+    }
+
+    .swiper-wrapper {
+
+        span{
+            @include background_text (transparent);
+        }    
+    }
+
+    // slider
+    [class*='hero'] {
+        &:hover {
+            img {
+                filter: grayscale(0%) !important;
+            }
+        }
+    }
+
+    //btn 
+    .btn-text.learn-more{
+        margin-top: 14px;
+        display: inline-block;
+            &.btn-green {
+                margin-top: 10px;
+            }
+        }
+
+
+    .bg-cards.keepbtn .device-card.tile-table .tile-card .read-more[simplywebbg="main"]{
+        display: inline-block !important;
+        margin: 10px 0px 20px 0px;
+        // margin-left: -1.5rem;
+    }
+
+    .read-more.select-product-from-grid.select-product-from-grid-without-close {
+        display: inline-block !important;
+        margin: 1rem;
+    }
+
+    .tile-card__front .tiles-box .read-more.select-product-from-grid.select-product-from-grid-without-close.link {
+        display: inline-block !important;
+        margin: 0 1.5rem 1rem;
+    }
+
+    .tile-card .tiles-box a:last-child{
+        display: flex;
+        margin-left: 1.5rem;
+
+    }
+
+    .learn-more-link {
+        display: contents;
+    }
+
+    //////////////
+
+    // menu
+    [class*='menu'] {
+        &:hover {
+            img {
+                filter: grayscale(0%) !important;
+            }
+        }
+    }
+    
+
+    .main-mega-menu-desktop .mega-menu-navbar-default .navbar-items .nav.navbar-nav.nav-right li:last-child a{
+        padding-right: 1.6rem;
+    }
+
+    .hamburger .line { 
+        background-color: #2b2e2c !important;
+    }
+
+    // block offers
+    .cover {
+        &:hover {
+            img {
+                filter: grayscale(0%) !important;
+            }
+        }
+    }
+
+   // HOVER 
+    .bgpattern, .icon, .nv-card-body , .cross-promo-plain, .plan-card , .tiles-content{
+            filter: grayscale(100%) !important;
+            &:hover {
+                  filter: grayscale(0%) !important;
+            }
+    }
+
+    // page careers
+    [class*='backgroundimage'] {
+        filter: grayscale(100%) !important;
+            &:hover {
+                  filter: grayscale(0%) !important;
+            }
+    }
+
+    // form
+    [type='submit']  [type='submit'] {
+        border: 1px solid;
+    }
+
+    .check-label {
+        position: initial;
+        &:before {
+            box-sizing: border-box;
+        }
+    }
+
+    .selector-toggle-item .selector-feature .selector-feature-label {
+        border: 1px solid;
+    }
+
+    // page home
+    .hero-links-secton {
+        display: none !important;
+    }
+
+    //banners
+    
+    [class*='promotional-banner'] {
+        display: none !important;
+    }
+
+    .media-cta-wrapper .recommended {
+        display: none;
+    }
+    .price-timing br {
+        display: none;
+    }
+
+
+    //table 
+    
+
+    .checkedClass {
+        background-color: $color-dim-white !important;
+    }
+
+    .selector-toggle-item input[type=radio]:checked+.selector-feature .selector-feature-label { 
+        border-color: $color-dim-white !important;
+    }
+
+    // extra spacing
+    .feature-outside-wrapper, .elife-location-setting-banner, .product-grid-text-section, .features-full-bleed-section, .footer-social-dwonload {
+        margin: 35px 0;
+    }
+
+    // main nav removal
+    /* .top-nav-section {
+        display: none;
+    }
+    .main-mega-menu-desktop {
+        display: none;
+    } */
+
+    // promo & cross promo 
+    .promo-grid img, .cross-promo-bg-tile img {
+        opacity: 0;
+    }
+    .promo-grid .cover, .promo-grid.small-tile-no-image.bgpattern, .cross-promo-bg-tile .cover, .promo-grid.medium-tile {
+        background-color: $color_bg_submain !important;
+    }
+    .promo-grid.medium-tile .grid-content {
+        width: auto;
+    }
+    .promo-grid .btn-text, .cross-promo-bg-tile .btn-text, .btn-text.learn-more{
+        padding: 15px 30px;
+
+        &::before {
+            content: none;
+        }
+    }
+    .promo-grid h1, .cross-promo-bg-tile h1 {
+        color: $color_text_main !important;
+
+        &::before {
+            content: none;
+        }
+    }
+
+
+    // media wrapper
+    &[page="smb"] .features-full-bleed-section.bg-dark {
+
+        .media-cta-wrapper {
+            background-color: transparent !important;
+            border-radius: 0;
+        }
+
+        .media-cta-text .body-standard {
+            background-color: $color_bg_main;
+            margin: 92px 12px;
+            padding: 50px 25px;
+            border-radius: 10px !important;
+        }
+    
+        .media-cta-text .recommended {
+            display: block;
+        }
+    
+        .media-cta-text .btn {
+            width: fit-content;
+        }
+
+        .media-cta-wrapper img{
+            opacity: 1;
+        }
+
+        .media-cta-wrapper .media-cta-text {
+            margin-left: 50%;
+            top: auto;
+            left: auto;
+            transform: translate(0, 0);
+        }
+    }
+
+    .features-full-bleed-section.bg-dark {
+
+        .media-cta-wrapper {
+            background-color: $color_bg_submain !important;
+            border-radius: 10px;
+        }
+        
+        .media-cta-wrapper img{
+            opacity: 0;
+        }
+
+        .media-cta-wrapper h2::before {
+            content: none;
+        }
+
+        .media-cta-text .action-items, .media-cta-text .detail-price-info {
+            display: block;
+        }
+    
+        .media-cta-text .detail-price-info {
+            margin-top: 10px;
+        }
+
+        .media-cta-text .btn {
+            width: fit-content;
+            padding: 0 25px;
+        }
+
+        .media-cta-wrapper .paragraph-styling::before, .media-cta-wrapper .detail-price-new::before {
+            content: none;
+        }
+
+        .media-cta-wrapper .cover {
+            background-color: $color_bg_main;
+        }
+
+        .media-cta-wrapper .media-cta-text {
+            margin: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+
+    // swiper slider 
+    .hero-banner-section .hero-details
+    ,.hero-image-section.hero-image .hero-details .c-left{
+        background-color: $color_bg_submain;
+        padding: 25px;
+        border-radius: 10px;
+    }
+    .hero-image-section.hero-video .swiper-slide .hero-heading-big {
+        line-height: 1 !important;
+    }
+
+    .hero-image-section .swiper-slide {
+         opacity: 0;
+
+        &:last-child {
+            opacity: 1;
+        }
+    }
+
+    .product-grid-text-section.plans .tile-table.device-card, .product-grid-text-section.plans .tile-table.plan-card, .product-grid-text-section.plans .tile-table.product-home-card {
+        border-radius: 12px;
+    }
+
+
+    .tile-card, .product, .tiles-box-title, .tiles-box-list, .smile-points, .nv-device-header,.p-12, .nv-smile-points  {
+
+        background-color: $color_bg_submain !important;
+
+    }
+
+    .product-grid-text-section.plans .bg-cards .plan-card.tile-table .tile-card .tiles-box-title {
+        background-image: none !important;
+        background-color: $color_bg_submain !important;
+    }
+
+    .p-12 h5::before{
+       background-color: $color_bg_submain !important;
+    }
+
+
+    .cross-promo-background .cross-promo-bg-tile .cta-content-wrap .cont .btn-text {
+        display: block  !important;
+    }
+    .cross-promo-background .cross-promo-bg-tile .cta-content-wrap{
+        background-image: none !important;
+    }
+
+    .bestseller-swiper .swiper-slide {
+        padding: 0 10px;
+    }
+    // silder filter
+    .rzslider span {
+        position: absolute !important;
+    }
+
+    .rzslider .rz-selection {
+        background-color: #719e19 !important;
+    }
+
+    .rz-bar {
+        background-color: $color_text_main !important;
+
+    }
+
+    .cross-promo-background .cross-promo-bg-tile .cta-content-wrap .cont h4::before {
+        background-color: transparent  !important;
+    
+    }
+
+
+    .context-navigation.three-col-static {
+        margin-bottom: 20px;
+    }
+
+    //CAROUSEL//
+    // border carousel
+    .tile-table.device-card,.nv-card-wrapper .nv-card.products .nv-card-body, .tile-card .tiles-box-title,.tile-card .tiles-box-list,.tile-card  .smile-points,.tile-card .product {
+        border-color: transparent !important;
+    }
+
+    .special-offer,.nv-special-offer {
+        background-color: $color_btn_inactive !important;
+        color: $color_btn_txt_inactive !important;
+    }
+
+    .nv-card.products {
+        background-color: $color_bg_submain !important;
+        
+    }
+
+    // Form login
+    .login-page-section .uae-Pass-cont .upCont h6 {
+        &::before {
+            content: none;
+        }
+    }
+
+    //table 
+    #Tab1Importanttoknow .body-desktop.panel{
+        padding: 25px;
+    }
+
+
+    .cta-benefits .media-cta-wrapper p {
+        color: $color_text_main !important;
+    }
+    
+    //plans
+    .learn-more {
+
+        .moreg center {
+            color: $color_btn_txt_inactive !important;
+        }
+
+        &:hover {
+            .moreg center {                
+                color: $color_btn_txt_active !important;
+            }
+        }
+    }
+
+
+    //
+    .tile-boxes-section-wrapper.tile-boxes-large .tile-box-tile .tile-box-body h2 {
+        height: auto;
+    }
+
+    .tile-boxes-section-wrapper.tile-boxes-large .tile-box-tile {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .img-cover {
+            width: 100%;
+        }
+    }
+
+    .btn-text {
+        display: inline-block;
+        position: relative;
+    }
+    
+    &[etisalatdevice="tablet"] .hero-image-section.hero-image-add.hero-image.medium.has-action.dynamic-content .hero-details{
+        left: 12px;
+
+        .c-left {
+            padding: 0 20px;
+        }
+    }
+
+
+    .nv-card-wrapper .nv-card.products.nv-device-card .nv-card-body .nv-product-name {
+        max-height: none;
+    }
+
+    .nv-plan-header.green ,.bg-cards .premium .tile-table .tile-card .tiles-box-title,
+    .range-slider-wrap .irs-bar, .range-slider-wrap .irs-bar-edge,
+    .bg-cards .plan-card.offer .tile-card .tiles-box-title, .bg-cards .plan-multi-card-selection.offer .tile-card .tiles-box-title, .bg-cards .plan-single-card-selection.offer .tile-card .tiles-box-title
+    {
+        background: $color_bg_submain !important;
+    }
+
+    .bg-cards .device-card-selection.tile-table .tile-card .tiles-box-title h2, .bg-cards .device-card.tile-table .tile-card .tiles-box-title h2, .bg-cards .device-multi-card-selection.tile-table .tile-card .tiles-box-title h2, .bg-cards .device-single-card-selection.tile-table .tile-card .tiles-box-title h2, .bg-cards .plan-card.tile-table .tile-card .tiles-box-title h2, .bg-cards .plan-multi-card-selection.tile-table .tile-card .tiles-box-title h2, .bg-cards .plan-single-card-selection.tile-table .tile-card .tiles-box-title h2, .bg-cards .product-grid.tile-table .tile-card .tiles-box-title h2, .bg-cards .product-home-card.tile-table .tile-card .tiles-box-title h2 {
+        max-height: none;
+    }
+
+    &[etisalatdevice="tablet"] .bg-cards.context-navigation-cards.context-navigation-swiper .row-tiles-table .swiper-slide.swiper-slide-active.bring-value-card-wrapper {
+        margin-bottom: 70px;
+    }
+
+    &[etisalatdevice="tablet"] #onlineOfferDivId .swiper-slide .hero-details {
+        left: 0;
+        width: 94%;
+        margin: 0 3%;
+        position: absolute;
+    }
+
+    .bg-cards .product-home-card.tile-table .tile-card .product, .bg-cards .product-home-multi-card-selection.tile-table .tile-card .product, .bg-cards .product-home-single-card-selection.tile-table .tile-card .product {
+        height: auto;
+    }
+
+    .bg-cards .product-home-card.tile-table .tile-card .product .tiles-box-title, .bg-cards .product-home-multi-card-selection.tile-table .tile-card .product .tiles-box-title, .bg-cards .product-home-single-card-selection.tile-table .tile-card .product .tiles-box-title {
+        position: relative;
+        bottom: auto;
+    }
+
+    .bg-cards .product-home-card.tile-table .tile-card .product .product-img, .bg-cards .product-home-multi-card-selection.tile-table .tile-card .product .product-img, .bg-cards .product-home-single-card-selection.tile-table .tile-card .product .product-img {
+        z-index: 1;
+    }
+
+    .tile-card.effect__click .tile , .tile-card__front .tiles-box {
+        background: $color_bg_submain !important;
+    }
+
+    .hero-images-call-to-action-section {
+        z-index: 99;
+    }
+
+    &[etisalatdevice="desktop"] #productsRow-cat750023 {
+        .tiles-box-title {
+            height: 220px;
+            h2[dir="ltr"] {
+                // line-height: 1.2 !important;
+            }
+        }
+    }
+
+    &[etisalatdevice="tablet"] .responsive-filters.mobileViewActive {
+        background: $color_bg_main !important;
+    }
+
+    .tile-card__front .tiles-box-title h2{
+        &:before {
+            background: transparent !important;
+        }
+
+    }
+
+    .responsive-filters.mobileViewActive, .responsive-sort.mobileViewActive {
+        position: relative;
+        height: auto;
+    }
+
+    .responsive-filters.mobileViewActive .filter-close:before, .responsive-sort.mobileViewActive .filter-close:before {
+        background: url('https://www.etisalat.ae/b2bportal/assets/img/svg-icons/icon-close-grey.svg') center no-repeat !important;
+        background-size: contain !important;
+    }
+
+     // block promo
+     .cross-promo-plain {
+        background: none !important;
+
+        .container {
+            background: $color_bg_submain !important;
+        }
+
+        &.cp-image-text {
+            .lef-col {
+                padding: 5rem;
+            }
+
+            .right-col {
+                display: none;
+            }
+        }
+    }
+
+      //responsive
+      &[etisalatdevice = 'tablet'] {
+        .main-text-slider-section.left-align .main-text-cta, .main-text-slider-section.left-align .paragraph-styling, .main-text-slider-section.left-align .wst-main-headings {
+            overflow: hidden;
+        }
+
+        // block bleed
+        .features-full-bleed-section {
+
+            .body-standard {
+                height: auto;
+                padding: 2rem;
+            }
+
+            .media-cta-wrapper {
+
+                &.media-cta-bleed>div {
+                    min-height: auto;
+                }
+
+                .media-cta-text {
+                    transform: none;
+                    top: auto;
+                    left: auto;
+                    position: relative;
+                    height: auto;
+                }
+            }
+
+            .action-items {
+                position: relative;
+                padding: 2rem 0 0;
+            }
+        }
+
+            // block promo
+            .cross-promo-plain {
+                background: none !important;
+                
+
+                &::after {
+                    display: none;
+                }
+
+                .container {
+                    background: $color_bg_submain !important;
+                    border-radius: 15px;
+                }
+
+                &.promo-big .content-section a.btn-text {
+                    float: none;
+                }
+
+                &.cp-image-text {
+
+                    .lef-col {
+                        padding: 3rem;
+                        min-height: 0;
+                    }
+
+                    .right-col {
+                        display: none;
+                    }
+                }
+            }
+        
+    } 
+
+    //table
+    .table {
+        background: $color_bg_submain !important;
+
+        &.table-striped>tbody>tr:nth-of-type(odd) {
+            background: $color_bg_main !important;
+        }
+
+        
+        thead th, &.table-striped tbody>tr>td {
+            color: $color_text_main !important;
+        }
+
+        td , th {
+            border-right: 1px solid;
+
+            &:last-child {
+                border-right: 0;
+            }
+        }
+    }
+}

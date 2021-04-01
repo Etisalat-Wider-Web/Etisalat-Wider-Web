@@ -1,0 +1,12 @@
+&[domain="youtube"] {
+    &[etisalatdevice="tablet"] {
+        .mobile-topbar-header.cbox {
+            background: $color_bg_main !important;
+        }
+    
+        #player-control-overlay {
+            background: transparent !important;
+        }
+    }
+    
+}

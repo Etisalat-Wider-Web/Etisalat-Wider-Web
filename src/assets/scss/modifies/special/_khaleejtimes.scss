@@ -1,0 +1,79 @@
+&[domain="khaleejtimes"] {
+    .slider_content h3 {
+        font-size: 11px;
+    }
+
+    .sidebar {
+        & > iframe, & > iframe + div{
+            display: none;
+        }
+    }
+
+    .newsletter_bg {
+        display: none;
+    }
+    
+    .pry_time_itm {
+        @include filter_grayscale();
+    }
+
+    
+
+    .slider-tab ul li, .slider-tab1 ul li, .slider_tab_buss ul li, .slider_tab_sports ul li {
+        background-color: transparent !important;
+        &:hover {
+
+            background-color: $color-dim-white !important;
+        }
+
+        &.current{
+            background-color: $color-dim-white !important;
+            background-image: none;
+        }
+    }
+
+    .tab_sec_5 a {
+
+        background-color: transparent !important;
+        &:hover {
+
+            background-color: $color-dim-white !important;
+            background-image: none;
+        }
+
+        &.active{
+            background-color: $color-dim-white !important;
+            background-image: none;
+        }
+
+    }
+
+    // .gold_listing_head ul li.deactive_grid, .gold_listing_head ul li.active_listing {
+    //     filter: grayscale(100%) !important;
+
+        
+    // }
+    .gold_listing_head ul li {
+        filter: grayscale(100%) !important;
+    }
+
+    .photo_content {
+        background-color: $color_bg_main !important;
+    }
+
+    .photo_gallery_tagline a {
+        background-color: $color_bg_main !important;
+        display: inline-block !important;
+    }
+
+
+    .css-v0rywh video {
+        display: none !important;
+    }
+
+    .images_txtbg{
+        z-index: 0;
+    }
+
+    
+}

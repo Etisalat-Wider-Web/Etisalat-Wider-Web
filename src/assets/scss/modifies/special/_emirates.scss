@@ -1,0 +1,140 @@
+
+&[domain="emirates"] {
+    .market-promo-item__details {
+        background: $color_bg_submain !important;
+
+        h2, p {
+            &::before {
+                background: transparent !important;
+            }
+        }
+    }
+
+    [class*="content-header__text"] {
+        text-shadow: none !important;
+    }
+
+    table th {
+        border-top: 2px solid;
+    }
+
+    #contentDivOpened {
+        * {
+            background: $color_bg_main !important;
+        }
+    }
+
+    .ts-aria-only {
+        position: absolute !important;
+    }
+
+    // bg dropdown
+    .chosen-single {
+        background: $color_bg_main !important;
+    }
+
+    i {
+        border: none !important;
+    }
+
+    .visually-hidden {
+        position: absolute;
+    }
+
+    // page book
+    p.ts-fip__type {
+        &:before {
+            display: none !important;
+        }
+    }
+
+    //result by price
+
+    .ts-txheader.ts-txheader--economy {
+        height: 100px !important;
+    }
+
+    .grid-table td.first{
+        border-left: 1px solid !important;
+    }
+
+    .grid-table td{
+        height: 100px !important;
+
+        .cell-text{
+            height: 100px;
+            box-sizing: border-box;
+            &:hover{
+                height: 98px;
+            }
+        }
+    }
+
+    .cell-info-content p, .cell-info-content p span {
+        position: static !important;
+    }
+
+    #gridContainer .grid-table tr td.default-cell .cell-text{
+        height: 98px !important;
+    }
+
+    .local-markets-promos__wrapper:hover picture img {
+        filter: grayscale(0%) !important;
+    }
+
+    .market-promo-item__subtitle {
+        line-height: 0 !important;
+    }
+
+    [data-id="pagebody_card"] {
+        .experience-block__grid-item {
+            background: $color_bg_submain !important;
+
+            .experience-block__grid-item-title {
+                &::before {
+                    background: transparent !important;
+                }
+            }
+            img {
+                display: none;
+            }
+        }
+    }
+    // banner header
+    .js-hero .hero__content .hero__title{
+        background-color: $color_bg_submain;
+        padding: 0px 25px;
+        border-radius: 10px;
+        h1 {
+            &::before {
+                background: transparent !important;
+            }
+        }
+    }
+
+    &[etisalatfontstyle="font_a"][etisalatdevice="desktop"] .js-widget .widget__container {
+        margin-top: 30px !important;
+    }
+
+    [data-auto="page-header"] {
+        p,h1,h2 {
+            &::before {
+                background: transparent !important;
+            }
+        }
+
+        .content-header.page-header__header {
+            background-color: $color_bg_submain;
+            padding: 10px 25px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            max-width: 700px;
+        }
+    }
+
+
+  
+}

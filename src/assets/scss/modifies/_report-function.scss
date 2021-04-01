@@ -1,0 +1,102 @@
+& + #reportfunction {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 214748364769;
+    background: rgba($color_bg_box, 0.9) !important;
+    
+    
+    .reportfunction-inner {
+
+        width: 90%;
+        border-radius: 15px;
+        max-width: 525px;
+        background: $color_popup_bg !important;
+        color: $color_popup_text !important;
+        min-width: 600px;
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 20px;
+
+        h1 {
+            color: $color_popup_text !important;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
+            font-weight: bold !important;
+            font-size: 25px;
+        }
+
+        p {
+            font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
+            font-weight: normal !important;
+            color: $color_popup_text !important;
+            font-size: 15px;
+            line-height: 1.4;
+
+            &::before {
+                display: none !important;
+            }
+        }
+
+        .inner-content {
+            padding: 10px;
+            color: $color_popup_text !important;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+
+            & > div:first-child {
+                width: 55%;
+            }
+
+            & > div:last-child {
+                width: 40%;
+            }
+
+           
+
+            textarea {
+                font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
+                font-weight: normal !important;
+                margin-top: 13px;
+                background: none !important;
+                border: 1px solid $color_popup_text !important;
+                color: $color_popup_text !important;
+                width: 100%;
+                height: 95%;
+                resize: none;
+                outline: none;
+                padding: 10px;
+                font-size: 15px;
+                box-sizing: border-box;
+                border-radius: 5px !important;
+            }
+        }
+
+        footer {
+            display: inline-flex;
+            flex-direction: column;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 25px;
+            font-size: 15px;
+            cursor: pointer;
+            z-index: 1;
+            background: $color_popup_bg !important;
+            color: $color_popup_text !important;
+            border-radius: 5px !important;
+            border: 1px solid $color_popup_text !important;
+            transition: none !important;
+        }
+    }
+
+    
+
+}
